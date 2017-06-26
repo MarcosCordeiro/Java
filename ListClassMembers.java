@@ -60,7 +60,7 @@ public class ListClassMembers {
 
 	
 	private static void listPrivateMethods() {
-		 List<Method> methods = getPrivateMethods(VendaControl.class);
+		 List<Method> methods = getPrivateMethods(ClassName.class);
 	        for(Method field: methods){
 	        	out.format("%s%n",field.toGenericString());
 	        }
@@ -68,7 +68,7 @@ public class ListClassMembers {
 	
 	
 	private static void listPrivateFields() {
-		 List<Field> fields = getPrivateFields(VendaControl.class);
+		 List<Field> fields = getPrivateFields(ClassName.class);
 	        for(Field field: fields){
 	        	out.format("%s%n",field.toGenericString());
 	        }
